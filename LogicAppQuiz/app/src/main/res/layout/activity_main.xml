@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/assignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/assignment"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/columnA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="76dp"
+        android:text="@string/columnA"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/columnB"
+        app:layout_constraintTop_toBottomOf="@+id/assignment" />
+
+    <TextView
+        android:id="@+id/columnB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/columnB"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assignment" />
+
+    <TextView
+        android:id="@+id/columnAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/columnAB"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/columnB"
+        app:layout_constraintTop_toBottomOf="@+id/assignment" />
+
+    <EditText
+        android:id="@+id/answerRowOne"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="38dp"
+        android:digits='"TF"'
+        android:ems="10"
+        android:hint="@string/answer"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/rowOneB"
+        app:layout_constraintTop_toBottomOf="@+id/columnAB" />
+
+    <EditText
+        android:id="@+id/answerRowTwo"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="26dp"
+        android:digits='"TF"'
+        android:ems="10"
+        android:hint="@string/answer"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/rowTwoB"
+        app:layout_constraintTop_toBottomOf="@+id/answerRowOne" />
+
+    <EditText
+        android:id="@+id/answerRowThree"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="26dp"
+        android:digits='"TF"'
+        android:ems="10"
+        android:hint="@string/answer"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/rowThreeB"
+        app:layout_constraintTop_toBottomOf="@+id/answerRowTwo" />
+
+    <EditText
+        android:id="@+id/answerRowFour"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="26dp"
+        android:digits='"TF"'
+        android:ems="10"
+        android:hint="@string/answer"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/rowFourB"
+        app:layout_constraintTop_toBottomOf="@+id/answerRowThree" />
+
+    <TextView
+        android:id="@+id/rowOneB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/t"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/columnB" />
+
+    <TextView
+        android:id="@+id/rowTwoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/f"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rowOneB" />
+
+    <TextView
+        android:id="@+id/rowThreeB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/t"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rowTwoB" />
+
+    <TextView
+        android:id="@+id/rowFourB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/f"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rowThreeB" />
+
+    <TextView
+        android:id="@+id/rowTwoA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="76dp"
+        android:text="@string/t"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/rowTwoB"
+        app:layout_constraintTop_toBottomOf="@+id/rowOneA" />
+
+    <TextView
+        android:id="@+id/rowThreeA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="76dp"
+        android:text="@string/f"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/rowThreeB"
+        app:layout_constraintTop_toBottomOf="@+id/rowTwoA" />
+
+    <TextView
+        android:id="@+id/rowFourA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="76dp"
+        android:text="@string/f"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/rowFourB"
+        app:layout_constraintTop_toBottomOf="@+id/rowThreeA" />
+
+    <TextView
+        android:id="@+id/rowOneA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="76dp"
+        android:text="@string/t"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/rowOneB"
+        app:layout_constraintTop_toBottomOf="@+id/columnA" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/btnCheck"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rowFourB" />
+</androidx.constraintlayout.widget.ConstraintLayout>

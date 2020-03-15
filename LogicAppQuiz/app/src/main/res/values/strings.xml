@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Logic App Quiz</string>
+
+    <string name="assignment">Conjunction (AND)</string>
+
+    <string name="columnA">A</string>
+    <string name="columnB">B</string>
+    <string name="columnAB">A ^ B</string>
+
+    <string name="t">T</string>
+    <string name="f">F</string>
+    <string name="answer">Ans</string>
+    <string name="btnCheck">Check</string>
+
+    <string name="resultText">Correct answers: %d</string>
+
+</resources>
